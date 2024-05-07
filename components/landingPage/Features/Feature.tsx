@@ -33,13 +33,13 @@ export default function Feature(props: {
 			<div
 				className={`content absolute left-0 right-0 top-[${props.top}] mx-auto my-2 max-w-prose p-4 transition-all`}
 			>
-				<h1 className="supernova text-4xl font-black uppercase text-white md:text-5xl">
+				<h1 className="text-4xl font-black text-white uppercase supernova md:text-5xl">
 					{props.heading}
 				</h1>
-				<div className="glass my-4 rounded-2xl p-4">
+				<div className="p-4 my-4 glass rounded-2xl">
 					<p className="text-justify text-white">{props.children}</p>
 					<div className="text-right">
-						<Link href={'/docs/' + props.id}>
+						<Link href={'/docs/' + props.id} legacyBehavior>
 							<a className="text-blue-400">Learn more</a>
 						</Link>
 					</div>
